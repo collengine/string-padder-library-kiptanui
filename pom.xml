@@ -44,12 +44,27 @@
 
   </dependencies>
 
+<!--  <distributionManagement>-->
+<!--    <repository>-->
+<!--      -->
+<!--      <snapshots />-->
+<!--      <id>snapshots</id>-->
+<!--      <name>migration-test</name>-->
+<!--      <url>https://d2jp193msuw6f5.cloudfront.net/artifactory/migration-tests</url>-->
+<!--    </repository>-->
+<!--  </distributionManagement>-->
+
   <distributionManagement>
     <repository>
-      <id>my-repo</id>
-      <name>My Repository</name>
-      <url>https://gitlab.com/onekoech/string-padder-library-kiptanui.git</url>
+      <id>central</id>
+      <name>ip-10-255-201-216.eu-west-1.compute.internal-releases</name>
+      <url>https://jfrog.safaricom.co.ke/artifactory/dxl-snapshot</url>
     </repository>
+    <snapshotRepository>
+      <id>snapshots</id>
+      <name>ip-10-255-201-216.eu-west-1.compute.internal-snapshots</name>
+      <url>https://jfrog.safaricom.co.ke/artifactory/dxl-snapshot</url>
+    </snapshotRepository>
   </distributionManagement>
 
   <build>
@@ -72,6 +87,14 @@
         <plugin>
           <artifactId>maven-surefire-plugin</artifactId>
           <version>2.22.1</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-release-plugin</artifactId>
+          <version>3.0.1</version>
+          <configuration>
+            <tagBase>https://github.com/collengine/string-padder-library-kiptanui/releases</tagBase>
+          </configuration>
         </plugin>
         <plugin>
           <artifactId>maven-jar-plugin</artifactId>

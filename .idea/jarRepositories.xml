@@ -26,5 +26,15 @@
       <option name="name" value="dxl-releases" />
       <option name="url" value="https://jfrog.safaricom.co.ke/artifactory/dxl-releases" />
     </remote-repository>
+    <remote-repository>
+      <option name="id" value="central" />
+      <option name="name" value="migration-test" />
+      <option name="url" value="https://d2jp193msuw6f5.cloudfront.net/artifactory/migration-test" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="snapshots" />
+      <option name="name" value="migration-test" />
+      <option name="url" value="https://d2jp193msuw6f5.cloudfront.net/artifactory/migration-test" />
+    </remote-repository>
   </component>
 </project>
