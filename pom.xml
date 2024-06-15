@@ -48,7 +48,7 @@
     <repository>
       <id>my-repo</id>
       <name>My Repository</name>
-      <url>https://github.com/collengine/devsecops-wit</url>
+      <url>https://github.com/collengine/string-padder-library.git</url>
     </repository>
   </distributionManagement>
 
