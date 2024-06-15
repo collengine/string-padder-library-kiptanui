@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.example</groupId>
     <artifactId>lib-quantum-sum</artifactId>
-    <version>1.0.0</version>
+    <version>1.0-SNAPSHOT</version>
 
     <properties>
         <maven.compiler.source>21</maven.compiler.source>
@@ -12,9 +14,9 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
     <scm>
-        <url>https://github.com/collengine/lib-quantum-sum</url>
-        <connection>scm:git:https://github.com/collengine/lib-quantum-sum.git</connection>
-        <tag>lib-quantum-sum-1.0.0</tag>
+        <url>https://github.com/collengine/string-padder-library-kiptanui</url>
+        <connection>scm:git:https://github.com/collengine/string-padder-library-kiptanui.git</connection>
+        <tag>HEAD</tag>
     </scm>
     <distributionManagement>
         <repository>
@@ -55,7 +57,7 @@
                     <artifactId>maven-release-plugin</artifactId>
                     <version>3.0.1</version>
                     <configuration>
-                        <tagBase>https://github.com/collengine/lib-quantum-sum/releases</tagBase>
+                        <tagBase>https://github.com/collengine/string-padder-library-kiptanui/releases</tagBase>
                     </configuration>
                 </plugin>
                 <plugin>
